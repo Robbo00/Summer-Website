@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <video class="back" autoplay muted loop>
-        <source src="/background/beach.mp4">
+    <div id="first">
+    <video id="back" class="back" autoplay muted loop>
+    <source src="/background/beach.mp4">
     </video>
-    <div class="start"><h1>Welcome</h1></div>
+    <h1 onclick="intro()" id="start">Welcome</h1>
+    </div>
+    <div id="real" class="real">
+            <video id="mainBack" autoplay muted loop>
+                <source
+            </video>
+            <div class="cont">
+                <sup>Activities Page</sup>
+                <pre>Click this page to explore different varities of summer activities</pre>
+            </div>
+        
+    </div>
     
 </body>
 <script src="index.js"></script>
