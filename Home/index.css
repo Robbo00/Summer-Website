@@ -38,7 +38,7 @@ body::after{
     left: 45%;
     top: 40%;
     color: white;
-    animation: Pop .7s forwards .8s;
+    animation: Pop .7s .8s;
     animation-fill-mode: forwards;
     visibility: hidden;
     border: none;
@@ -123,7 +123,7 @@ video{
     left: 0;
     top: 0;
     height: 100%;
-    transition: width 1.5s ease-in-out;
+    transition: width 1.2s ease-in-out;
     background-color: black;
     opacity: .5;
     z-index: 5;
@@ -134,17 +134,33 @@ video{
 
 #point{font-size: 60px; top: 0px}
 
+.a{
+    animation: Pop 1s ;
+    animation-fill-mode: forwards;
+    transition: .4s;
+    color: rgb(213, 207, 207);
+}
+i:hover{
+    color: rgb(226, 110, 97);
+    cursor: pointer;
+}
+
 #lef{
+    font-size: 25px;
     position: absolute;
-    left: 0;
-    top: 30%;
+    left: 3%;
+    top: 43%;
     z-index: 6;
+    visibility: hidden;
+    
 }
 #righ{
+    font-size: 25px;
     position: absolute;
-    right: 0;
-    top: 30%;
+    right: 3%;
+    top: 43%;
     z-index: 6;
+    visibility: hidden;
 }
 
 @keyframes pulse{
