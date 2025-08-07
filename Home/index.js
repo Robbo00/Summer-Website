@@ -8,24 +8,26 @@ let vis = document.getElementById('vis')
 let cont = document.getElementById('cont')
 let left = document.getElementById('lef')
 let right = document.getElementById('righ')
+let bop = document.getElementById('top')
 
-let switchBacks = ['/background/dogs.mp4', '/background/two.mp4']
-let switchHeads = ['Activities Page', 'Gallery Page']
-let switchSub = ['Visit this page to explore different varities of summer activities', 'Visit this page to see beautiful pictures']
-
+let switchBacks = ['/background/dogs.mp4', '/background/two.mp4', '/background/pool.mp4', '/background/frolic.mp4']
+let switchHeads = ['Activities ', 'Gallery ', 'About', 'Contact']
+let switchSub = ['Visit this page to explore different varities of summer activities', 'View wonderful images depicting all sorts of summer festivities', 'Learn the motivation behind this project', 'Reach out to the creator of this project']
+let start = 0
 
 function intro(){
     change.style.top = '-50px'
     setTimeout(function(){change.style.display = 'none'}, 1000) 
     fresh.style.top = '0'
     setTimeout(function(){cont.style.visibility = 'visible'},  1000) 
-    main.setAttribute('src', '/background/dogs.mp4')
+    main.setAttribute('src', switchBacks[start])
     setTimeout(function(){swish.style.width = '100%'}, 1000) 
     setTimeout(function(){cont.style.top = '36%'}, 2000) 
     setTimeout(function(){vis.style.visibility = 'visible'}, 2700) 
     setTimeout(function(){
         left.classList.add('a'); 
-        right.classList.add('a')}, 3000) 
+        right.classList.add('a')
+        bop.classList.add('a')}, 3000) 
 }
 function back(){
         cont.style.visibility = 'hidden'
@@ -38,4 +40,27 @@ function back(){
     vis.style.visibility = 'hidden'
     left.classList.remove('a'); 
     right.classList.remove('a')
+    bop.classList.remove('a')
+}
+
+function next(){
+    if(start == 4){
+        return
+    }
+    start++
+    point.innerHTML = switchHeads[start]
+    vis.innerHTML = switchSub[start]
+    main.classList.add('play')
+    main.setAttribute('src', switchBacks[start])
+}
+
+function prev(){
+    if(start == 0){
+        return
+    }
+    start--
+    point.innerHTML = switchHeads[start]
+    vis.innerHTML = switchSub[start]
+    main.classList.add('play')
+    main.setAttribute('src', switchBacks[start])
 }
