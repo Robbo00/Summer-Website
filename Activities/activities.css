@@ -1,33 +1,81 @@
-
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(229, 228, 228);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(/accy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mid{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s;
+}
 body::after{
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: .4;
-    z-index: -1;
+    opacity: .5;
 }
-
-.mainBack{
+.nav{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
+    height: 15%;
+    background-color: white;
+
 }
-.activites{
-    width: 45%;
-    height: 60%;
+.layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: .5s;
     position: absolute;
-    left: 30%;
-    top: 20%;
-    z-index: 1;
-    background-color: azure;
+}
+.title{
+    z-index: 3;
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    font-size: 5rem;
+    color: rgb(234, 231, 231);
+    transition: .6s;
+    opacity: 0;
+}
+.title:hover{
+    transform: scale(1.2);
+    opacity: 0;
+    cursor: pointer;
 }
 
+.activities{
+    position: relative;
+    left: 110%;
+    width: 75%;
+    height: 70%;
+    background-color: white;
+    z-index: 4;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+.activities > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+
+}

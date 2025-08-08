@@ -23,7 +23,7 @@ function intro(){
     main.setAttribute('src', switchBacks[start])
     setTimeout(function(){swish.style.width = '100%'}, 1000) 
     setTimeout(function(){cont.style.top = '36%'}, 2000) 
-    setTimeout(function(){vis.style.visibility = 'visible'}, 2700) 
+    setTimeout(function(){vis.style.opacity = '1'}, 2700) 
     setTimeout(function(){
         left.classList.add('a'); 
         right.classList.add('a')
@@ -37,7 +37,7 @@ function back(){
     fresh.style.top = '100%'
     swish.style.width = '0'
     cont.style.top = '-100%'
-    vis.style.visibility = 'hidden'
+    vis.style.opacity = '1'
     left.classList.remove('a'); 
     right.classList.remove('a')
     bop.classList.remove('a')

@@ -141,7 +141,7 @@ body::after{
     width: 0;
 }
 
-#vis{visibility: hidden; transition: visibility .6s;}
+#vis{opacity: 0;; transition: visibility .3s; transition: .5s;}
 
 #point{font-size: 60px; top: 0px; transition: 1s; opacity: .6;}
 
