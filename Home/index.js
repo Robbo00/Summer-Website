@@ -44,7 +44,7 @@ function back(){
 }
 
 function next(){
-    if(start == 4){
+    if(start == 3){
         return
     }
     start++
@@ -63,4 +63,9 @@ function prev(){
     vis.innerHTML = switchSub[start]
     main.classList.add('play')
     main.setAttribute('src', switchBacks[start])
+}
+
+function page(id){
+    let m = document.getElementById(id).innerHTML.toLowerCase()
+    window.location.href =  `/${m}/${m}.html`
 }

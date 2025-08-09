@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activities</title>
     <link rel="stylesheet" href="/Activities/activities.css">
+    <link rel="stylesheet" href="/font.css">
 </head>
 <body>
+    <a href="/Home/index.html"><h1 id="home" style="color: white;" class="home">Navigation</h1></a>
     <div id="layout" class="layout">
 <!-- <div class="nav">
         Navigation
@@ -19,35 +21,56 @@
     </div>
     
     <div class="activities">
-        <div>
-            <img>
-            <p>l</p>
+        
+        <div onclick="search(id)"  id="1" onmouseleave="stopVid(id)" onmouseover="playVid(id)">
+            <video id="vid1" height="50%">
+                <source src="/Activities/Dynamic/dyBeach.mp4">
+            </video>
+            <h1 class="Beach" id="s1">The Beach</h1>
+            <p>Sun, sand, and salty hair. Perfect spot to relax, tan, or pretend you’re in a travel commercial.</p>
         </div>
         
-        <div>
-            <img>
-            <p></p>
+        <div onclick="search(id)" id="2" onmouseleave="stopVid(id)" onmouseover="playVid(id)">
+            <video id="vid2" height="50%">
+                <source src="/Activities/Dynamic/dyWaterPark.mp4">
+            </video>
+            <h1 id="s2" class="WaterPark">Water Park</h1>
+            <p>Slides, splashes, and non-stop giggles. Just don’t race your friends… unless you’re ready to lose.</p>
         </div>
         
-        <div>
-            <img>
-            <p></p>
+        <div onclick="search(id)" id="3" onmouseleave="stopVid(id)" onmouseover="playVid(id)">
+            <video id="vid3" height="50%">
+                <source src="/Activities/Dynamic/dySwimming.mp4">
+            </video>
+            <h1 id="s3" class="pool">Swimming</h1>
+            <p>Dive in, cool off, and feel like a mermaid—or a very fast sea turtle.</p>
         </div>
         
-        <div>
-            <img>
-            <p></p>
+        <div onclick="search(id)" id="4" onmouseleave="stopVid(id)" onmouseover="playVid(id)">
+            <video id="vid4" height="50%">
+                <source src="/Activities/Dynamic/dyAmusement.mp4">
+            </video>
+            <h1 id="s4" class="Amusementpark">Amusement Park</h1>
+            <p>Roller coasters, cotton candy, and way too many selfies. The perfect recipe for fun!</p>
         </div>
         
-        <div>
-            <img>
-            <p></p>
+        <div onclick="search(id)" id="5" onmouseleave="stopVid(id)" onmouseover="playVid(id)">
+            <video id="vid5" height="50%">
+                <source src="/Activities/Dynamic/dyHiking.mp4">
+            </video>
+            <h1 id="s5" class="HikingTrail">Hiking</h1>
+            <p>Fresh air, epic views, and that satisfying feeling of earning your snack at the top.</p>
         </div>
         
-        <div>
-            <img>
-            <p></p>
+        <div onclick="search(id)" id="6" onmouseleave="stopVid(id)" onmouseover="playVid(id)">
+            <video id="vid6" height="50%">
+                <source src="/Activities/Dynamic/dyPark.mp4">
+            </video>
+            <h1 id="s6" class="LocalPark">Local Parks</h1>
+            <p>Picnic blankets, frisbee throws, and squirrels judging your snack choices.</p>
         </div>
+        
+        
 
     </div>
     </div>

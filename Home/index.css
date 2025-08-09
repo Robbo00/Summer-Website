@@ -201,14 +201,7 @@ i:hover{
     z-index: 6;
 }
 
-@keyframes pulse{
-    50%{
-        box-shadow: 0px 0px 110px 60px salmon ;
-    }
-    100%{
-        box-shadow: 0px 0px 110px 10px salmon ;
-    }
-}
+
 
 
 @keyframes Pop {
@@ -223,13 +216,6 @@ i:hover{
     }
 }
 
-@keyframes Glow{
-    50%{
-        box-shadow: 0px 0px 110px 60px salmon ;
-    }
-    100%{
-        box-shadow: 0px 0px 110px 40px rgb(159, 140, 32);
-    }
-}
+
 
 
